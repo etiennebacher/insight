@@ -14,7 +14,7 @@ printed in color in the console."><meta property="og:image" content="/reference/
     
     <a class="navbar-brand me-2" href="../index.html">insight</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.16.0.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.17.1.7</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,35 +96,19 @@ printed in color in the console.</p>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>x</dt>
-<dd><p>A data frame</p></dd>
-<dt>columns</dt>
-<dd><p>Character vector with column names of <code>x</code> that should be
-formatted.</p></dd>
-<dt>predicate</dt>
-<dd><p>A function that takes <code>columns</code> and <code>value</code> as input
-and which should return <code>TRUE</code> or <code>FALSE</code>, based on if the condition
-(in comparison with <code>value</code>) is met.</p></dd>
-<dt>value</dt>
-<dd><p>The comparator. May be used in conjunction with <code>predicate</code>
-to quickly set up a function which compares elements in <code>colums</code> to <code>value</code>.
-May be ignored when <code>predicate</code> is a function that internally computes other
-comparisons. See 'Examples'.</p></dd>
-<dt>color_if, colour_if</dt>
-<dd><p>Character vector, indicating the color code used to
-format values in <code>x</code> that meet the condition of <code>predicate</code> and <code>value</code>.
-May be one of <code>"red"</code>, <code>"yellow"</code>, <code>"green"</code>, <code>"blue"</code>,
-<code>"violet"</code>, <code>"cyan"</code> or <code>"grey"</code>. Formatting is also possible
-with <code>"bold"</code> or <code>"italic"</code>.</p></dd>
-<dt>color_else, colour_else</dt>
-<dd><p>See <code>color_if</code>, but only for conditions
-that are <em>not</em> met.</p></dd>
-<dt>digits</dt>
-<dd><p>Digits for rounded values.</p></dd>
-</dl></div>
+    <p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+    </div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>The .</p>
+    
+
+<p>The .</p>
     </div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
@@ -148,12 +132,12 @@ that are <em>not</em> met.</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8  \033[31m        5.00\033[39m         3.4          1.5         0.2  setosa</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9  \033[31m        4.40\033[39m         2.9          1.4         0.2  setosa</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10 \033[31m        4.90\033[39m         3.1          1.5         0.1  setosa</span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">Sepal.Length</span><span class="op">)</span></span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/brms/man/addition-terms.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">Sepal.Length</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">        5.10</span> <span style="color: #BB0000;">        4.90</span> <span style="color: #BB0000;">        4.70</span> <span style="color: #BB0000;">        4.60</span> <span style="color: #BB0000;">        5.00</span> <span style="color: #00BB00;">        5.40</span> <span style="color: #BB0000;">        4.60</span> <span style="color: #BB0000;">        5.00</span> <span style="color: #BB0000;">        4.40</span> <span style="color: #BB0000;">        4.90</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># all levels "setosa" in Species in green, all remaining in red</span></span>
 <span class="r-in"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">color_if</span><span class="op">(</span><span class="va">iris</span>, columns <span class="op">=</span> <span class="st">"Species"</span>, predicate <span class="op">=</span> <span class="va">`==`</span>, value <span class="op">=</span> <span class="st">"setosa"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">Species</span><span class="op">)</span></span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/brms/man/addition-terms.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">Species</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #00BB00;">    setosa</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;">versicolor</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span> <span style="color: #BB0000;"> virginica</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># own function, argument "value" not needed here</span></span>
@@ -162,7 +146,7 @@ that are <em>not</em> met.</p></dd>
 <span class="r-in"><span class="op">}</span></span>
 <span class="r-in"><span class="co"># all values in Sepal.Length between 4.9 and 5.1 in green, all remaining in red</span></span>
 <span class="r-in"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">color_if</span><span class="op">(</span><span class="va">iris</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span>, columns <span class="op">=</span> <span class="st">"Sepal.Length"</span>, predicate <span class="op">=</span> <span class="va">p</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">Sepal.Length</span><span class="op">)</span></span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/brms/man/addition-terms.html" class="external-link">cat</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">Sepal.Length</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">        5.10</span> <span style="color: #00BB00;">        4.90</span> <span style="color: #BB0000;">        4.70</span> <span style="color: #BB0000;">        4.60</span> <span style="color: #00BB00;">        5.00</span> <span style="color: #BB0000;">        5.40</span> <span style="color: #BB0000;">        4.60</span> <span style="color: #00BB00;">        5.00</span> <span style="color: #BB0000;">        4.40</span> <span style="color: #00BB00;">        4.90</span></span>
 </code></pre></div>
     </div>
@@ -171,11 +155,11 @@ that are <em>not</em> met.</p></dd>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p></p><p>Developed by <a href="https://github.com/strengejacke/" class="external-link">Daniel Lüdecke</a>, <a href="https://dominiquemakowski.github.io/" class="external-link">Dominique Makowski</a>, <a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link">Indrajeet Patil</a>, Philip Waggoner, <a href="https://sites.google.com/view/mattansb/" class="external-link">Mattan S. Ben-Shachar</a>, <a href="https://wiernik.org/" class="external-link">Brenton M. Wiernik</a>.</p>
+  <p></p><p>Developed by <a href="https://github.com/strengejacke/" class="external-link">Daniel Lüdecke</a>, <a href="https://dominiquemakowski.github.io/" class="external-link">Dominique Makowski</a>, <a href="https://sites.google.com/site/indrajeetspatilmorality/" class="external-link">Indrajeet Patil</a>, Philip Waggoner, <a href="https://sites.google.com/view/mattansb/" class="external-link">Mattan S. Ben-Shachar</a>, <a href="https://wiernik.org/" class="external-link">Brenton M. Wiernik</a>, Vincent Arel-Bundock.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.9000.</p>
 </div>
 
     </footer></div>
